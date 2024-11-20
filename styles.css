@@ -1,0 +1,155 @@
+/* Estilos globais */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #121212;
+    color: #fff;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background: #1f1f1f;
+    color: #ffcc00;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    background: #333;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 15px;
+    display: inline-block;
+    transition: background 0.3s;
+}
+
+nav ul li a:hover {
+    background: #ffcc00;
+    color: #000;
+    border-radius: 5px;
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+section {
+    margin: 20px 0;
+}
+
+/* Slideshow */
+.slideshow-container {
+    position: relative;
+    max-width: 80%;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 10px;
+    border: 2px solid #ffcc00;
+}
+
+.slide {
+    display: none;
+}
+
+.slide img {
+    width: 100%;
+    height: auto;
+}
+
+.caption {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.fade {
+    animation: fadeEffect 1.5s ease-in-out;
+}
+
+@keyframes fadeEffect {
+    from {
+        opacity: 0.4;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #1f1f1f;
+    color: #999;
+}
+
+#formulario {
+    background: #1f1f1f;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+#formulario p {
+    color: #ffcc00;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.btn-submit {
+    background: #25d366;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.btn-revendedor {
+    background: #ffcc00; /* Cor de fundo do botão */
+    color: #000; /* Cor do texto do botão */
+    font-weight: bold; /* Deixa o texto em negrito */
+    text-decoration: none; /* Remove o sublinhado */
+    padding: 10px 20px;
+    border-radius: 8px;
+    display: inline-block;
+    transition: 0.3s ease; /* Suaviza o hover */
+}
+
+.btn-revendedor:hover {
+    background: #ff9900; /* Cor ao passar o mouse */
+    color: #fff; /* Cor do texto ao passar o mouse */
+}
+
+.btn-teste {
+    background: #28a745; /* Cor de fundo verde para destacar o teste grátis */
+    color: #fff;
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    display: inline-block;
+    transition: 0.3s ease;
+}
+
+.btn-teste:hover {
+    background: #218838; /* Cor ao passar o mouse */
+    color: #fff;
+}
